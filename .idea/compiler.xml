@@ -7,11 +7,9 @@
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
         <module name="console-store (1)" />
+        <module name="store-core" />
         <module name="store-runner" />
       </profile>
     </annotationProcessing>
-    <bytecodeTargetLevel>
-      <module name="store-core" target="1.8" />
-    </bytecodeTargetLevel>
   </component>
 </project>
