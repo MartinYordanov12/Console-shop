@@ -1,7 +1,7 @@
 package com.coherentsolutions.store.service;
 
 import com.coherentsolutions.store.domain.Category;
-import exceptions.CategoryException;
+import com.coherentsolutions.store.exceptions.CategoryException;
 import org.reflections.Reflections;
 import java.lang.reflect.InvocationTargetException;
 import java.util.List;

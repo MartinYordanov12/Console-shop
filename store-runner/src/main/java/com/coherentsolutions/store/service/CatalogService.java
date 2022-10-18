@@ -3,7 +3,7 @@ package com.coherentsolutions.store.service;
 import com.coherentsolutions.store.domain.Catalog;
 import com.coherentsolutions.store.domain.Category;
 import com.coherentsolutions.store.domain.Product;
-import exceptions.CatalogException;
+import com.coherentsolutions.store.exceptions.CatalogException;
 import java.util.List;
 
 public class CatalogService {
