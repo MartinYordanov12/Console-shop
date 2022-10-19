@@ -1,6 +1,6 @@
-package com.coherentsolutions.store.reader;
+package com.coherentsolutions.store.core.utils;
 
-import com.coherentsolutions.store.exceptions.ParsingException;
+import com.coherentsolutions.store.core.exceptions.ParsingException;
 import org.w3c.dom.Document;
 import org.w3c.dom.Element;
 import org.w3c.dom.Node;
@@ -23,7 +23,7 @@ public class SortRulesFileReader {
     private static final String SORT_RULES = "sort-rules";
     private static final Integer INDEX = 0;
 
-    public Map<String, String> readXmlTagNames(String sortRulesFile){
+    public Map<String, String> readXmlTagNames(String sortRulesFile) {
         Map<String, String> sortRulesFileData = new LinkedHashMap<>();
         ClassLoader classLoader = getClass().getClassLoader();
         File file = new File(classLoader.getResource(sortRulesFile).getFile());

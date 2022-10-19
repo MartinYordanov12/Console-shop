@@ -1,9 +1,5 @@
-package com.coherentsolutions.store.invoke;
+package com.coherentsolutions.store.commands;
 
-import com.coherentsolutions.store.commands.Command;
-import com.coherentsolutions.store.commands.QuitCommand;
-import com.coherentsolutions.store.commands.SortCommand;
-import com.coherentsolutions.store.commands.TopCommand;
 import com.coherentsolutions.store.domain.Catalog;
 import com.coherentsolutions.store.utils.PrintingLine;
 
