@@ -10,9 +10,9 @@ public class RandomFakeProductGenerator {
     private static final Integer RATE_MIN = 1;
     private static final Integer RATE_MAX = 6;
 
-    private static final Faker GENERATOR = new Faker();
+    private final Faker GENERATOR = new Faker();
 
-    public static void generateFakeProductsForCatalog(Catalog catalog, int productsCount) {
+    public void generateFakeProductsForCatalog(Catalog catalog, int productsCount) {
         catalog.getCategories().forEach(x -> {
             for (int i = 0; i < productsCount; i++) {
                 x.addProduct(createFakeProduct());
@@ -20,7 +20,7 @@ public class RandomFakeProductGenerator {
         });
     }
 
-    private static Product createFakeProduct() {
+    private Product createFakeProduct() {
         int price = GENERATOR.number().numberBetween(PRICE_MIN, PRICE_MAX);
         int rating = GENERATOR.number().numberBetween(RATE_MIN, RATE_MAX);
         String name = GENERATOR.name().firstName();
