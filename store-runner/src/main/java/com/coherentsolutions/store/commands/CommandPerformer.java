@@ -1,6 +1,4 @@
-package com.coherentsolutions.store.invoke;
-
-import com.coherentsolutions.store.commands.Command;
+package com.coherentsolutions.store.commands;
 
 public class CommandPerformer {
     public void performCommand(Command command) {
